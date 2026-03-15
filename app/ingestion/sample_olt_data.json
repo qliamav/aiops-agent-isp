@@ -1,0 +1,20 @@
+﻿[
+  {
+    "olt_id": "olt-1",
+    "slot": 0,
+    "port": 1,
+    "pon_type": "GPON",
+    "onu_count": 32,
+    "rx_power_dbm": -18.5,
+    "tx_power_dbm": 3.0
+  },
+  {
+    "olt_id": "olt-1",
+    "slot": 0,
+    "port": 2,
+    "pon_type": "XGSPON",
+    "onu_count": 16,
+    "rx_power_dbm": -20.1,
+    "tx_power_dbm": 4.0
+  }
+]

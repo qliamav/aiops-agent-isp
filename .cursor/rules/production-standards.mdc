@@ -1,0 +1,26 @@
+---
+description: "Estándares obligatorios para producción"
+alwaysApply: true
+---
+
+# Production Standards - AIOPS ISP LITE
+
+Estándares obligatorios para AIOPS ISP LITE. Siempre genera código listo para producción.
+
+## Reglas
+
+- **Python 3.12** + Pydantic strict + type hints en todo el código.
+- **Tests**: Incluye pytest en cada feature (tests por módulo/funcionalidad).
+- **Secrets**: Nunca hardcodees secrets; usa variables de entorno y documenta en `.env.example`.
+- **Infra y CI/CD**:
+  - Dockerfile multi-stage.
+  - `.github/workflows/ci-cd.yml` para pipeline de integración y despliegue.
+- **Observabilidad y resiliencia**:
+  - Logging en formato JSON.
+  - Rate limiting en APIs.
+  - Endpoint `/health` para readiness/liveness.
+- **Documentación**: Al terminar cada feature, incluye sección "Deployment to Production" en `README.md`.
+
+## Crítico
+
+**NUNCA borres ni elimines ningún archivo existente.** Solo crea nuevos archivos o añade código nuevo. Prohibido cualquier `delete` o `remove`.

@@ -1,0 +1,15 @@
+﻿fastapi
+uvicorn
+pydantic
+pydantic-settings
+sqlalchemy
+psycopg2-binary
+scikit-learn
+xgboost
+apscheduler
+httpx
+polars
+pytest
+ruff
+joblib
+prometheus-client
